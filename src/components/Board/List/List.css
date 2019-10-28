@@ -1,0 +1,36 @@
+.List {
+    background: #ebecf0;
+    padding: 10px;
+    border-radius: 3px;
+    box-sizing: border-box;
+    flex: 0 0 25%;
+    max-height: 100%;
+    position: relative;
+    margin: 0 20px;
+}
+
+.List .title {
+    font-weight: bold;
+    font-size: 18px;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 10px;
+    border-radius: 3px;
+
+    background: #172b4d;
+    padding: 5px 10px;
+    position: relative;
+}
+
+.List .wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.List .title .Button {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    margin: 0;
+}
