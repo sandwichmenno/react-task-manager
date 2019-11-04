@@ -1,4 +1,4 @@
-import React  from 'react';
+import React from 'react';
 import './Button.css';
 
 const Button = props => {
@@ -15,7 +15,7 @@ const Button = props => {
     }
 
     return (
-        <button className={classes.join(" ")} onClick={props.buttonClicked}>{props.text}</button>
+        <button className={classes.join(" ")} onClick={props.onClick}>{props.children}</button>
     );
 };
 

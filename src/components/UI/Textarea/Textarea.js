@@ -1,10 +1,8 @@
 import React  from 'react';
 import './Textarea.css';
 
-const Button = props => {
-    return (
-        <textarea className="TextArea" onChange={props.updateInput}></textarea>
-    );
-};
+const Textarea = props => (
+    <textarea className="TextArea" value={props.value} onChange={props.onChange}></textarea>
+);
 
-export default Button;
+export default Textarea;
