@@ -4,6 +4,7 @@ import './App.css';
 import Board from './components/Board/Board';
 
 import {StateProvider} from "./components/State";
+import styled from "styled-components";
 
 function App() {
     const initialState = {

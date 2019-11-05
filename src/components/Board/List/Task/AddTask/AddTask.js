@@ -1,17 +1,22 @@
 import React  from 'react';
 import { useStateValue } from '../../../../State';
 
-import './AddTask.css';
-
 import Button from '../../../../UI/Button/Button';
 import Textarea from '../../../../UI/Textarea/Textarea';
+import styled from "styled-components";
+
+const Container = styled.div`
+    display: flex;
+    flex:1;
+    flex-wrap: wrap;
+`;
 
 const AddTask = props => {
     const [{ tasks, lists }, dispatch] = useStateValue();
     let listIndex = lists.listObjects.findIndex(obj => obj.id === props.listID);
 
     return (
-        <div className="AddTask">
+        <Container>
             <Textarea onChange={(e) => dispatch({
                 type: 'CHANGE_INPUT',
                 inputValue: e.target.value,
@@ -26,7 +31,7 @@ const AddTask = props => {
                 },
                 newID: tasks.lastID + 1
             })}>Add task</Button>
-        </div>
+        </Container>
     );
 };
 
